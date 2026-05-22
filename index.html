@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Communities</title>
+
+<style>
+:root{
+    --primary:#ff6b35;
+    --secondary:#ff9f1c;
+    --dark:#121212;
+    --card:#1c1c1c;
+    --text:#f5f5f5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--dark);
+    color:var(--text);
+    font-family:'Segoe UI',sans-serif;
+}
+
+.language-switch{
+    text-align:center;
+    padding:20px;
+}
+
+.language-switch button{
+    padding:10px 20px;
+    margin:0 5px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.language-switch button:hover{
+    transform:scale(1.05);
+}
+
+.community-wrapper{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:2rem;
+    max-width:1200px;
+    margin:auto;
+    padding:2rem;
+}
+
+.community-card{
+    background:linear-gradient(145deg,#1e1e1e,#262626);
+    border-radius:20px;
+    padding:2rem;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    transition:.3s ease;
+}
+
+.community-card:hover{
+    transform:translateY(-8px);
+}
+
+.community-card h2{
+    margin-bottom:1rem;
+}
+
+.community-card p{
+    color:#d6d6d6;
+    line-height:1.7;
+}
+
+.community-card ul{
+    list-style:none;
+    margin:1.5rem 0;
+}
+
+.community-card li{
+    margin-bottom:.8rem;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+.btn{
+    display:inline-block;
+    padding:.9rem 1.5rem;
+    text-decoration:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.eci{
+    border-top:4px solid #ff6b35;
+}
+
+.acttwo{
+    border-top:4px solid #00d4ff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="language-switch">
+    <button onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+</div>
+
+<div class="community-wrapper">
+
+    <!-- Evolution Creative Ink -->
+    <section class="community-card eci">
+
+        <h2
+            data-de="🎨 Evolution Creative Ink"
+            data-en="🎨 Evolution Creative Ink">
+            🎨 Evolution Creative Ink
+        </h2>
+
+        <p
+            data-de="Evolution Creative Ink ist eine kreative Community für Designer, Künstler, Entwickler und Content Creator. Hier entstehen neue Ideen, spannende Projekte und kreative Zusammenarbeit."
+            data-en="Evolution Creative Ink is a creative community for designers, artists, developers and content creators. New ideas, exciting projects and creative collaborations are born here.">
+            Evolution Creative Ink ist eine kreative Community für Designer, Künstler, Entwickler und Content Creator.
+        </p>
+
+        <ul>
+            <li data-de="🎭 Kreative Projekte & Kooperationen"
+                data-en="🎭 Creative Projects & Collaborations">
+                🎭 Kreative Projekte & Kooperationen
+            </li>
+
+            <li data-de="🎨 Kunst, Design & Medien"
+                data-en="🎨 Art, Design & Media">
+                🎨 Kunst, Design & Medien
+            </li>
+
+            <li data-de="💡 Ideen austauschen & Feedback erhalten"
+                data-en="💡 Share Ideas & Get Feedback">
+                💡 Ideen austauschen & Feedback erhalten
+            </li>
+
+            <li data-de="🤝 Community-Events & Networking"
+                data-en="🤝 Community Events & Networking">
+                🤝 Community-Events & Networking
+            </li>
+        </ul>
+
+        <div class="buttons">
+            <a href="https://discord.gg/27F642AaEG" target="_blank" class="btn"
+               data-de="Discord beitreten"
+               data-en="Join Discord">
+                Discord beitreten
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ACT TWO Games -->
+    <section class="community-card acttwo">
+
+        <h2
+            data-de="🎮 ACT TWO Games"
+            data-en="🎮 ACT TWO Games">
+            🎮 ACT TWO Games
+        </h2>
+
+        <p
+            data-de="ACT TWO Games steht für kreative Spielerlebnisse, innovative Projekte und eine leidenschaftliche Community."
+            data-en="ACT TWO Games stands for creative gaming experiences, innovative projects and a passionate community.">
+            ACT TWO Games steht für kreative Spielerlebnisse, innovative Projekte und eine leidenschaftliche Community.
+        </p>
+
+        <ul>
+            <li data-de="🎮 Gaming & Community"
+                data-en="🎮 Gaming & Community">
+                🎮 Gaming & Community
+            </li>
+
+            <li data-de="🚀 Exklusive Projekt-Updates"
+                data-en="🚀 Exclusive Project Updates">
+                🚀 Exklusive Projekt-Updates
+            </li>
+
+            <li data-de="🧪 Playtests & Events"
+                data-en="🧪 Playtests & Events">
+                🧪 Playtests & Events
+            </li>
+
+            <li data-de="💬 Direkter Austausch mit der Community"
+                data-en="💬 Direct Community Interaction">
+                💬 Direkter Austausch mit der Community
+            </li>
+        </ul>
+
+        <div class="buttons">
+            <a href="https://discord.com/invite/q7ZtWUeDev" target="_blank" class="btn"
+               data-de="Discord beitreten"
+               data-en="Join Discord">
+                Discord beitreten
+            </a>
+
+            <a href="https://www.acttwo.games/" target="_blank" class="btn"
+               data-de="Offizielle Website"
+               data-en="Official Website">
+                Offizielle Website
+            </a>
+        </div>
+
+    </section>
+
+</div>
+
+<script>
+function setLanguage(lang){
+
+    document.querySelectorAll('[data-de]').forEach(element => {
+
+        if(element.tagName === "A"){
+            element.textContent = element.getAttribute('data-' + lang);
+        }else{
+            element.innerHTML = element.getAttribute('data-' + lang);
+        }
+
+    });
+
+    localStorage.setItem("language", lang);
+}
+
+window.onload = () => {
+
+    const savedLang = localStorage.getItem("language");
+
+    if(savedLang){
+        setLanguage(savedLang);
+    }else{
+        const browserLang = navigator.language.startsWith('de') ? 'de' : 'en';
+        setLanguage(browserLang);
+    }
+
+};
+</script>
+
+</body>
+</html>
